@@ -5,6 +5,6 @@ nn=[]
 for i in lines:
     nn.append(i.replace("o","X"))
 
-fd = open("C:/Users/Uczeń/Desktop/git/pythong/pliki/new3.txt","w")
+fd = open("C:/Users/Uczeń/Desktop/git/pythong/pliki/new.txt","w")
 fd.writelines(nn)
 fd.close()
