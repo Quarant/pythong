@@ -1,0 +1,18 @@
+import threading
+import time
+import random
+
+def f(index,liczba,delay):
+    for i in range(20):
+        print("liczba: {} delay: {} index: {}".format(liczba,delay,index))
+        liczba *= liczba
+        time.sleep(delay)
+        
+threads=[]
+
+for i in range(10):
+    t=threading.Thread(target=f,args=(i,random.randint(1,10),random.randint(4,10)))
+    t.start()
+    threads.append(t)
+        
+            
