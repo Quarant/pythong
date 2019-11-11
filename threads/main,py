@@ -10,7 +10,7 @@ def f(index,liczba,delay):
         
 threads=[]
 
-for i in range(10):
+for i in range(999):
     t=threading.Thread(target=f,args=(i,random.randint(1,10),random.randint(4,10)))
     t.start()
     threads.append(t)
